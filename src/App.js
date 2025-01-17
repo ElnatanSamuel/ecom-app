@@ -31,11 +31,13 @@ function App() {
               <Routes>
                 {/* Admin Routes */}
                 <Route path="/admin" element={<ProtectedRoute />}>
-                  <Route index element={<Stats />} />
-                  <Route path="products" element={<ProductManagement />} />
-                  <Route path="featured" element={<FeaturedItems />} />
-                  <Route path="collections" element={<AdminCollections />} />
-                  <Route path="stats" element={<Stats />} />
+                  <Route index element={<AdminDashboard />}>
+                    <Route index element={<Stats />} />
+                    <Route path="products" element={<ProductManagement />} />
+                    <Route path="featured" element={<FeaturedItems />} />
+                    <Route path="collections" element={<AdminCollections />} />
+                    <Route path="stats" element={<Stats />} />
+                  </Route>
                 </Route>
                 <Route path="/admin/login" element={<AdminLogin />} />
 
