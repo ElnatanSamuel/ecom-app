@@ -148,12 +148,6 @@ const Navbar = () => {
 
           {/* Right Side */}
           <div className="flex items-center space-x-4 md:space-x-8 flex-1 justify-end">
-            <Link
-              to="/admin/login"
-              className="text-gray-600 hover:text-gray-900 text-sm font-medium"
-            >
-              Admin Login
-            </Link>
             <div className="relative">
               <button
                 onClick={() => dispatch(toggleCart())}

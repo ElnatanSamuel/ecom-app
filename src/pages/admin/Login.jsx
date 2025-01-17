@@ -58,6 +58,11 @@ const AdminLogin = () => {
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Admin Login
           </h2>
+          <div className="mt-2 text-center text-sm text-gray-600">
+            <p>Demo Credentials:</p>
+            <p className="font-semibold">Email: admin@shop.com</p>
+            <p className="font-semibold">Password: admin1234</p>
+          </div>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           {error && (
