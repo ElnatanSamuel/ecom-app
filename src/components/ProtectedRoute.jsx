@@ -8,7 +8,11 @@ const ProtectedRoute = () => {
     return <Navigate to="/admin/login" replace />;
   }
 
-  return <Outlet />;
+  return (
+    <AdminDashboard>
+      <Outlet />
+    </AdminDashboard>
+  );
 };
 
 export default ProtectedRoute;
