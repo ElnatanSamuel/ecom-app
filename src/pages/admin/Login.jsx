@@ -20,14 +20,17 @@ const AdminLogin = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/admin/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(credentials),
-        credentials: "include",
-      });
+      const response = await fetch(
+        "https://ecom-server-zeta.vercel.app/api/admin/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(credentials),
+          credentials: "include",
+        }
+      );
 
       const data = await response.json();
 

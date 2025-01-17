@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/admin";
+const API_URL = "https://ecom-server-zeta.vercel.app/api/admin";
 
 const getToken = () => {
   const admin = JSON.parse(localStorage.getItem("admin"));
